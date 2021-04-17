@@ -1,0 +1,8 @@
+name: CI
+on: [push]
+jobs:
+  ci:
+    runs-on: macos-10.15
+    steps:
+      - uses: actions/checkout@v2
+      - run: ./install.sh
